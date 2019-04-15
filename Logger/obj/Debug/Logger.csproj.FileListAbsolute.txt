@@ -1,0 +1,12 @@
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Logger.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Logger.pdb
+C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.csprojAssemblyReference.cache
+C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.csproj.CoreCompileInputs.cache
+C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.pdb
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.csproj.CopyComplete
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.pdb

@@ -1,0 +1,2 @@
+C:\Users\makarova.olga\source\repos\Logger\Bootstrap\obj\Debug\Bootstrap.csprojAssemblyReference.cache
+C:\Users\makarova.olga\source\repos\Logger\Bootstrap\obj\Debug\Bootstrap.csproj.CoreCompileInputs.cache
