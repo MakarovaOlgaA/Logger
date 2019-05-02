@@ -97,3 +97,9 @@ C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\obj\Debug\SomeWebA
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\obj\Debug\SomeWebApplication.csproj.CopyComplete
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\obj\Debug\SomeWebApplication.dll
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\obj\Debug\SomeWebApplication.pdb
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Infrastructure.dll
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Logger.dll
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\log4net.dll
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Infrastructure.pdb
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Logger.pdb
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\log4net.xml

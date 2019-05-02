@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Infrastructure.Logging;
+using System;
 
 namespace SomeWebApplication.Logging
 {
-    public class EnviromnentHelper : IEnvironmentHelper
+    public static class EnviromnentHelper
     {
-        public bool IsLoggingEnabled(LoggingLevel level)
+        public static bool IsLoggingEnabled(LoggingLevel level)
         {
             var loggingLevels = LoggingSettings.Settings.EnabledLoggingLevels;
 

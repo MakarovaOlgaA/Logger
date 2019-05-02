@@ -8,14 +8,14 @@
     {
         protected readonly string fileName;
 
-        public FileLogger(string fileName, Func<LoggingLevel, bool> isLoggingLevelEnabled): base (isLoggingLevelEnabled)
+        public FileLogger(string fileName, Func<LoggingLevel, bool> isLoggingEnabled): base (isLoggingEnabled)
         {
             this.fileName = fileName;
         }
 
         protected void WriteLog(LoggingLevel level, string log, object context = null)
         {
-            if (IsLoggingLevelEnabled(level))
+            if (IsLoggingEnabled(level))
             {
                 using (StreamWriter file = new StreamWriter(fileName, true))
                 {

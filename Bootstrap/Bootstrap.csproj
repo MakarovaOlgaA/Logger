@@ -62,6 +62,10 @@
       <Project>{13E24B35-02EC-4269-A5E9-42FC063FA482}</Project>
       <Name>Infrastructure</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SomeWebApplication\SomeWebApplication.csproj">
+      <Project>{8C2A5EE0-D0A5-4D3B-8D79-3B1FAB620A23}</Project>
+      <Name>SomeWebApplication</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

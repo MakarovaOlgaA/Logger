@@ -6,11 +6,11 @@
 
     public abstract class BaseLogger
     {
-        public Func<LoggingLevel, bool> IsLoggingLevelEnabled;
+        public Func<LoggingLevel, bool> IsLoggingEnabled;
 
-        public BaseLogger(Func<LoggingLevel, bool> isLoggingLevelEnabled)
+        public BaseLogger(Func<LoggingLevel, bool> isLoggingEnabled)
         {
-            IsLoggingLevelEnabled = isLoggingLevelEnabled;
+            IsLoggingEnabled = isLoggingEnabled;
         }
 
         public virtual string FormatException(Exception ex)

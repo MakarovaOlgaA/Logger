@@ -10,3 +10,5 @@ C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Newtonsoft.Json.xml
 C:\Users\makarova.olga\source\repos\Logger\Logger\obj\Debug\Logger.csproj.CopyComplete
 C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.dll
 C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.pdb
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\log4net.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\log4net.xml

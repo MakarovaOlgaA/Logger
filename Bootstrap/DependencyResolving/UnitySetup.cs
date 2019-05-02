@@ -1,6 +1,7 @@
 ﻿namespace Bootstrap.DependencyResolving
 {
     using Infrastructure.Resolving;
+    using SomeWebApplication.Logging.LoggerFactories;
     using System;
     using Unity;
     using Unity.Injection;
@@ -23,7 +24,7 @@
         {
             container.RegisterType<IServiceLocator>(new InjectionFactory(c => CreateFactory()));
             container.RegisterType<ILoggerFactory, FileLoggerFactory>("FileLogger");
-
+            container.RegisterType<ILoggerFactory, Log4NetFactory>("Log4Net");
         }
 
         public static IServiceLocator CreateFactory()

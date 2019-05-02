@@ -1,12 +1,14 @@
 ﻿namespace SomeWebApplication.Logging
 {
+    using Infrastructure.Logging;
+    using System;
     using System.Configuration;
 
     public class LoggingSettings: ConfigurationSection
     {
         public static LoggingSettings Settings {
             get {
-                return ConfigurationManager.GetSection("BlogSettings") as LoggingSettings;
+                return ConfigurationManager.GetSection("LoggingSettings") as LoggingSettings;
             }
         }
 
@@ -32,6 +34,24 @@
         public string FileName {
             get { return (string)this["FileName"]; }
             set { this["FileName"] = value; }
+        }
+
+        [ConfigurationProperty("ConnectionString", IsRequired = false)]
+        public string ConnectionString {
+            get { return (string)this["ConnectionString"]; }
+            set { this["ConnectionString"] = value; }
+        }
+
+        [ConfigurationProperty("Command", IsRequired = false)]
+        public string Command {
+            get { return (string)this["Command"]; }
+            set { this["Command"] = value; }
+        }
+
+        [ConfigurationProperty("Target", IsRequired = false, DefaultValue = LoggingTarget.FileSystem)]
+        public LoggingTarget Target {
+            get { return (LoggingTarget)Enum.Parse(typeof(LoggingTarget), (string)this["Target"]); }
+            set { this["Target"] = value; }
         }
     }
 }

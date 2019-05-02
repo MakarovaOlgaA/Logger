@@ -1,6 +1,5 @@
 C:\Users\makarova.olga\source\repos\Logger\Infrastructure\bin\Debug\Infrastructure.dll
 C:\Users\makarova.olga\source\repos\Logger\Infrastructure\bin\Debug\Infrastructure.pdb
-C:\Users\makarova.olga\source\repos\Logger\Infrastructure\obj\Debug\Infrastructure.csprojAssemblyReference.cache
 C:\Users\makarova.olga\source\repos\Logger\Infrastructure\obj\Debug\Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\makarova.olga\source\repos\Logger\Infrastructure\obj\Debug\Infrastructure.dll
 C:\Users\makarova.olga\source\repos\Logger\Infrastructure\obj\Debug\Infrastructure.pdb

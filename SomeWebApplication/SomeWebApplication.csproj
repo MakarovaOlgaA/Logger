@@ -189,12 +189,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Logging\EnviromnentHelper.cs" />
-    <Compile Include="Logging\IEnvironmentHelper.cs" />
     <Compile Include="Logging\LoggerFactories\FileLoggerFactory.cs" />
     <Compile Include="Logging\LoggerFactories\ILoggerFactory.cs" />
-    <Compile Include="Logging\LoggerFactories\LoggerFactoryResolver.cs" />
+    <Compile Include="Logging\LoggerFactories\Log4NetFactory.cs" />
     <Compile Include="Logging\LoggingSettings.cs" />
-    <Compile Include="Logging\TypeResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -288,6 +286,10 @@
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{13E24B35-02EC-4269-A5E9-42FC063FA482}</Project>
       <Name>Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{C46425AB-6CF5-463A-AA9E-BCA5F640CDA5}</Project>
+      <Name>Logger</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

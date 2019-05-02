@@ -1,6 +1,7 @@
 ﻿using Infrastructure.Logging;
+using Logger;
 
-namespace SomeWebApplication.Logging
+namespace SomeWebApplication.Logging.LoggerFactories
 {
     public class FileLoggerFactory : ILoggerFactory
     {
@@ -8,7 +9,7 @@ namespace SomeWebApplication.Logging
         {
             var fileName = LoggingSettings.Settings.FileName;
 
-            return new FileLogger(fileName, new EnviromnentHelper());
+            return new FileLogger(fileName, EnviromnentHelper.IsLoggingEnabled);
         }
     }
 }

@@ -1,0 +1,11 @@
+packages/
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.exe
+*.pdb
+*.manifest
+*.cache
+*.suo
+*.user
