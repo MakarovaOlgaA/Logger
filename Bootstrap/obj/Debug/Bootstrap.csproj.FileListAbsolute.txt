@@ -40,3 +40,5 @@ C:\Users\makarova.olga\source\repos\Logger\Bootstrap\bin\Debug\System.Web.WebPag
 C:\Users\makarova.olga\source\repos\Logger\Bootstrap\obj\Debug\Bootstrap.csproj.CopyComplete
 C:\Users\makarova.olga\source\repos\Logger\Bootstrap\obj\Debug\Bootstrap.dll
 C:\Users\makarova.olga\source\repos\Logger\Bootstrap\obj\Debug\Bootstrap.pdb
+C:\Users\makarova.olga\source\repos\Logger\Bootstrap\bin\Debug\Security.dll
+C:\Users\makarova.olga\source\repos\Logger\Bootstrap\bin\Debug\Security.pdb

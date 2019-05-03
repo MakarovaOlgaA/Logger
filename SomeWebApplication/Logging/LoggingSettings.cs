@@ -18,7 +18,7 @@
             set { this["EnabledLoggingLevels"] = value; }
         }
 
-        [ConfigurationProperty("EnableEncryption", DefaultValue = "false", IsRequired = false)]
+        [ConfigurationProperty("EnableEncryption", DefaultValue = false, IsRequired = false)]
         public bool EnableEncryption {
             get { return (bool)this["EnableEncryption"]; }
             set { this["EnableEncryption"] = value; }
@@ -52,6 +52,12 @@
         public LoggingTarget Target {
             get { return (LoggingTarget)Enum.Parse(typeof(LoggingTarget), (string)this["Target"]); }
             set { this["Target"] = value; }
+        }
+
+        [ConfigurationProperty("EncryptionKey", IsRequired = false)]
+        public string EncryptionKey {
+            get { return (string)this["EncryptionKey"]; }
+            set { this["EncryptionKey"] = value; }
         }
     }
 }

@@ -2,13 +2,15 @@
 {
     using Infrastructure.Logging;
     using Newtonsoft.Json;
+    using Security.Encryption;
     using System;
+    using System.Configuration;
 
     public abstract class BaseLogger
     {
         public Func<LoggingLevel, bool> IsLoggingEnabled;
 
-        public BaseLogger(Func<LoggingLevel, bool> isLoggingEnabled)
+        public BaseLogger(Func<LoggingLevel, bool> isLoggingEnabled, bool isEncryptionEnabled = false)
         {
             IsLoggingEnabled = isLoggingEnabled;
         }
@@ -22,6 +24,11 @@
         {
             var result = obj == null ? String.Empty : JsonConvert.SerializeObject(obj);
             return result;
+        }
+
+        public virtual string ProcessLog(string log)
+        {
+            return EncryptionHelper.Encryprt(log, ConfigurationManager.AppSettings["EncryptKey"]);
         }
     }
 }

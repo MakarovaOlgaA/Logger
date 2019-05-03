@@ -9,7 +9,7 @@ namespace SomeWebApplication.Logging.LoggerFactories
         {
             var fileName = LoggingSettings.Settings.FileName;
 
-            return new FileLogger(fileName, EnviromnentHelper.IsLoggingEnabled);
+            return new FileLogger(fileName, EnviromnentHelper.IsLoggingEnabled, LoggingSettings.Settings.EnableEncryption);
         }
     }
 }

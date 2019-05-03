@@ -12,3 +12,5 @@ C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.dll
 C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Infrastructure.pdb
 C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\log4net.dll
 C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\log4net.xml
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Security.dll
+C:\Users\makarova.olga\source\repos\Logger\Logger\bin\Debug\Security.pdb

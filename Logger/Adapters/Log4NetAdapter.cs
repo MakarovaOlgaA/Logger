@@ -12,12 +12,12 @@
         private readonly ILog logger;
         private const string LOGGER_NAME = "Log4NetLogger";
 
-        public Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled) : base(isLoggingLevelEnabled)
+        protected Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled, bool isEncryptionEnabled = false) : base(isLoggingLevelEnabled, isEncryptionEnabled)
         {
             logger = LogManager.GetLogger(LOGGER_NAME);
         }
 
-        public Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled, string fileName) : this(isLoggingLevelEnabled)
+        public Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled, bool isEncryptionEnabled, string fileName) : this(isLoggingLevelEnabled)
         {
             var fileAppender = ((Hierarchy)LogManager.GetRepository()).Root.Appenders.OfType<FileAppender>().FirstOrDefault();
 
@@ -26,7 +26,7 @@
             fileAppender.ActivateOptions();
         }
 
-        public Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled, string connectionString, string command) : this(isLoggingLevelEnabled)
+        public Log4NetAdapter(Func<LoggingLevel, bool> isLoggingLevelEnabled, bool isEncryptionEnabled, string connectionString, string command) : this(isLoggingLevelEnabled, isEncryptionEnabled)
         {
             var dbAppender = ((Hierarchy)LogManager.GetRepository()).Root.Appenders.OfType<AdoNetAppender>().FirstOrDefault();
 
@@ -40,7 +40,7 @@
         {
             if (IsLoggingEnabled(LoggingLevel.Critical))
             {
-                logger.Fatal(value + StringifyObject(context));
+                logger.Fatal(ProcessLog(value) + StringifyObject(context));
             }
         }
 
@@ -53,7 +53,7 @@
         {
             if (IsLoggingEnabled(LoggingLevel.Debug))
             {
-                logger.Debug(value + StringifyObject(context));
+                logger.Debug(ProcessLog(value) + StringifyObject(context));
             }
         }
 
@@ -61,7 +61,7 @@
         {
             if (IsLoggingEnabled(LoggingLevel.Error))
             {
-                logger.Error(value + StringifyObject(context));
+                logger.Error(ProcessLog(value) + StringifyObject(context));
             }
         }
 
@@ -74,7 +74,7 @@
         {
             if (IsLoggingEnabled(LoggingLevel.Info))
             {
-                logger.Info(value + StringifyObject(context));
+                logger.Info(ProcessLog(value) + StringifyObject(context));
             }
         }
 

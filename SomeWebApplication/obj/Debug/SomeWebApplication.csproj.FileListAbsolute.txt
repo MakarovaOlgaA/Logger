@@ -103,3 +103,5 @@ C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\log4net.dll
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Infrastructure.pdb
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Logger.pdb
 C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\log4net.xml
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Security.dll
+C:\Users\makarova.olga\source\repos\Logger\SomeWebApplication\bin\Security.pdb

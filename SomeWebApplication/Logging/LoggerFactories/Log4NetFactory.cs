@@ -17,13 +17,13 @@
             {
                 case LoggingTarget.FileSystem:
                 {
-                    adapter = new Log4NetAdapter(EnviromnentHelper.IsLoggingEnabled,
+                    adapter = new Log4NetAdapter(EnviromnentHelper.IsLoggingEnabled, LoggingSettings.Settings.EnableEncryption,
                         LoggingSettings.Settings.FileName);
                     break;
                 }
                 case LoggingTarget.Database:
                 {
-                    adapter = new Log4NetAdapter(EnviromnentHelper.IsLoggingEnabled,
+                    adapter = new Log4NetAdapter(EnviromnentHelper.IsLoggingEnabled, LoggingSettings.Settings.EnableEncryption,
                         LoggingSettings.Settings.ConnectionString, LoggingSettings.Settings.Command);
 
                     break;

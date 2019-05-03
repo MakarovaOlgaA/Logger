@@ -8,7 +8,7 @@
     {
         protected readonly string fileName;
 
-        public FileLogger(string fileName, Func<LoggingLevel, bool> isLoggingEnabled): base (isLoggingEnabled)
+        public FileLogger(string fileName, Func<LoggingLevel, bool> isLoggingEnabled, bool isEncryptionEnabled = false) : base (isLoggingEnabled, isEncryptionEnabled)
         {
             this.fileName = fileName;
         }
@@ -20,7 +20,7 @@
                 using (StreamWriter file = new StreamWriter(fileName, true))
                 {
                     var contextStr = context == null ? "Unknown" : StringifyObject(context);
-                    var message = String.Format("Level: {0}\tLog: {1}\tContext: {2}", level.ToString(), log, contextStr);
+                    var message = String.Format("Level: {0}\tLog: {1}\tContext: {2}", level.ToString(), ProcessLog(log), contextStr);
 
                     file.WriteLine(message);
                 }
